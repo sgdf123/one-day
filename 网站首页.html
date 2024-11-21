@@ -1,0 +1,50 @@
+```html
+<html>
+    <head>
+        <title>网站首页</title>
+        <style type = "text/css">
+            #MenuBar:link{
+                text-decoration:none;
+                color:black;
+            }
+            #MenuBar:visited{
+                color:purple;
+            }
+            #MenuBar:hover{
+                color:blue;
+            }
+            #MenuBar:active{
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+    	<div>
+            <p>
+                <table>
+                    <tr>
+                        <td><a id="MenuBar" href="网站首页.html" target = _self>首页</a></td>
+                        <td><a id="MenuBar" href="" target = _blank>视频</a></td>
+                        <td><a id="MenuBar" href="" target = _blank>行业知识</a></td>
+                        <td><a id="MenuBar" href="链接墙.html" target = _blank>链接墙</a></td>
+                        <td><a id="MenuBar" href="个人中心.html" target = _blank>个人中心</a></td>
+                        <td><a id="MenuBar" href="教程学习.html" target = _blank>教程学习</a></td>
+                        <td><a id="MenuBar" href="导航栏.html" target = _blank>导航栏</a></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td><span id= "nowtime"></span></td>
+                    </tr>
+                </table>
+            </p>
+            <hr>
+        </div>
+   	</body>
+</html>
+<script>
+var IntervalID = setInterval(Show_Time,1000);
+function Show_Time()
+    {
+        let nowtime = new Date();
+        document.getElementById("nowtime").innerHTML = nowtime;
+    }
+</script>
+```
